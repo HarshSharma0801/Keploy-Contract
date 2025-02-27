@@ -1,0 +1,1 @@
+keploy record -c "docker run -p 3004:3004 --name notification-svc --network keploy-network notification-service-contract" --container-name "notification-svc" --buildDelay 60
