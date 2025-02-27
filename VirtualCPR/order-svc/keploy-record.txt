@@ -1,1 +1,10 @@
 keploy record -c "docker run -p 3002:3002 --name order-svc --network keploy-network order-service-contract" --container-name "order-svc" --buildDelay 60
+
+
+
+        user-svc:
+          - /api/users/{id}
+        payment-svc:
+          - /api/payments
+        notification-svc:
+          - /api/notifications
