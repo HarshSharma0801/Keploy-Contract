@@ -17,33 +17,34 @@ spec:
             User-Agent: curl/8.7.1
         body: |-
             {
-                       "user_id": 2,
-                       "amount": 200,
-                       "description": "Test order"
+                       "user_id": 1,
+                       "amount": 500,
+                       "description": "Test Order"
                      }
-        timestamp: 2025-02-26T05:29:48.242712907Z
+        timestamp: 2025-03-03T16:29:09.843716051Z
     resp:
-        status_code: 200
+        status_code: 400
         header:
-            Content-Length: "173"
-            Content-Type: application/json
-            Date: Wed, 26 Feb 2025 05:29:48 GMT
+            Content-Length: "66"
+            Content-Type: text/plain; charset=utf-8
+            Date: Mon, 03 Mar 2025 16:29:09 GMT
+            X-Content-Type-Options: nosniff
         body: |
-            {"order":{"id":4,"user_id":2,"amount":200,"description":"Test order"},"payment":{"orderId":4,"amount":200,"status":"success","transactionId":"pi_3QwdBoSFHehR7P6b1sQrMLcc"}}
-        status_message: OK
+            {"error": "User validation failed: user not found or error: 404"}
+        status_message: Bad Request
         proto_major: 0
         proto_minor: 0
-        timestamp: 2025-02-26T05:29:50.648839964Z
+        timestamp: 2025-03-03T16:29:11.885475263Z
     objects: []
     assertions:
         noise:
             header.Date: []
-    created: 1740547790
+    created: 1741019351
 curl: |-
     curl --request POST \
       --url http://localhost:3002/api/orders \
-      --header 'Host: localhost:3002' \
       --header 'User-Agent: curl/8.7.1' \
       --header 'Accept: */*' \
       --header 'Content-Type: application/json' \
-      --data "{\n           \"user_id\": 2,\n           \"amount\": 200,\n           \"description\": \"Test order\"\n         }"
+      --header 'Host: localhost:3002' \
+      --data "{\n           \"user_id\": 1,\n           \"amount\": 500,\n           \"description\": \"Test Order\"\n         }"

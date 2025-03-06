@@ -1,0 +1,34 @@
+🐰 Keploy: 2025-03-03T21:56:05+05:30 	[34mINFO[0m	Starting keploy in docker with image	{"image:": "ghcr.io/keploy/keploy:v2.4.5"}
+🐰 Keploy: 2025-03-03T21:56:06+05:30 	[34mINFO[0m	Starting keploy in docker with default context, as that is the current context.
+🐰 Keploy: 2025-03-03T16:26:06Z 	[34mINFO[0m	detected that Keploy is running in a docker container
+🐰 Keploy: 2025-03-03T16:26:06Z 	[34mINFO[0m	trying to inject network:keploy-network to the keploy container
+🐰 Keploy: 2025-03-03T16:26:06Z 	[34mINFO[0m	Successfully injected network to the keploy container	{"Keploy container": "keploy-v2", "appNetwork": "keploy-network", "keploy container ip": "172.19.0.2"}
+🐰 Keploy: 2025-03-03T16:26:06Z 	[34mINFO[0m	keploy initialized and probes added to the kernel.
+🐰 Keploy: 2025-03-03T16:26:06Z 	[34mINFO[0m	starting UDP DNS server at addr :26789
+🐰 Keploy: 2025-03-03T16:26:06Z 	[34mINFO[0m	starting TCP DNS server at addr :26789
+🐰 Keploy: 2025-03-03T16:26:06Z 	[34mINFO[0m	Keploy has taken control of the DNS resolution mechanism, your application may misbehave if you have provided wrong domain name in your application code.
+🐰 Keploy: 2025-03-03T16:26:06Z 	[34mINFO[0m	Proxy started at port:16789
+🐰 Keploy: 2025-03-03T16:27:03Z 	[34mINFO[0m	🟠 Keploy has captured test cases for the user's application.	{"path": "/Users/harshsharma/Desktop/kep/Keploy-Contract/VirtualCPR/order-svc/keploy/test-set-0/tests", "testcase name": "test-1"}
+🐰 Keploy: 2025-03-03T16:29:09Z 	[33mWARN[0m	Malformed request	{"ExpectedRecvBytes": 0, "ActualRecvBytes": 0}
+🐰 Keploy: 2025-03-03T16:29:09Z 	[33mWARN[0m	failed processing a request due to invalid request or response	{"Request Size": 0, "Response Size": 105}
+🐰 Keploy: 2025-03-03T16:29:11Z 	[34mINFO[0m	🟠 Keploy has captured test cases for the user's application.	{"path": "/Users/harshsharma/Desktop/kep/Keploy-Contract/VirtualCPR/order-svc/keploy/test-set-0/tests", "testcase name": "test-2"}
+🐰 Keploy: 2025-03-03T16:29:18Z 	[33mWARN[0m	Malformed request	{"ExpectedRecvBytes": 0, "ActualRecvBytes": 0}
+🐰 Keploy: 2025-03-03T16:29:18Z 	[33mWARN[0m	failed processing a request due to invalid request or response	{"Request Size": 0, "Response Size": 105}
+🐰 Keploy: 2025-03-03T16:29:20Z 	[34mINFO[0m	🟠 Keploy has captured test cases for the user's application.	{"path": "/Users/harshsharma/Desktop/kep/Keploy-Contract/VirtualCPR/order-svc/keploy/test-set-0/tests", "testcase name": "test-3"}
+🐰 Keploy: 2025-03-03T16:29:54Z 	[33mWARN[0m	Malformed request	{"ExpectedRecvBytes": 0, "ActualRecvBytes": 0}
+🐰 Keploy: 2025-03-03T16:29:54Z 	[33mWARN[0m	failed processing a request due to invalid request or response	{"Request Size": 0, "Response Size": 105}
+🐰 Keploy: 2025-03-03T16:29:55Z 	[33mWARN[0m	Malformed request	{"ExpectedRecvBytes": 0, "ActualRecvBytes": 0}
+🐰 Keploy: 2025-03-03T16:29:55Z 	[33mWARN[0m	failed processing a request due to invalid request or response	{"Request Size": 0, "Response Size": 215}
+🐰 Keploy: 2025-03-03T16:29:55Z 	[33mWARN[0m	Malformed request	{"ExpectedRecvBytes": 0, "ActualRecvBytes": 0}
+🐰 Keploy: 2025-03-03T16:29:55Z 	[33mWARN[0m	failed processing a request due to invalid request or response	{"Request Size": 0, "Response Size": 258}
+🐰 Keploy: 2025-03-03T16:29:57Z 	[34mINFO[0m	🟠 Keploy has captured test cases for the user's application.	{"path": "/Users/harshsharma/Desktop/kep/Keploy-Contract/VirtualCPR/order-svc/keploy/test-set-0/tests", "testcase name": "test-4"}
+🐰 Keploy: 2025-03-03T16:30:03Z 	[31mERROR[0m	failed to parse the http request from byte array	{"requestBuf": "SFRUUC8xLjEgMjAwIE9LDQpDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24NCkRhdGU6IE1vbiwgMDMgTWFyIDIwMjUgMTY6Mjk6NTQgR01UDQpDb250ZW50LUxlbmd0aDogNTcNCg0KeyJpZCI6MiwibmFtZSI6IkpvaG4gRG9lIiwiZW1haWwiOiJqb2hubm55QGV4YW1wbGUuY29tIn0K", "error": "invalid method \"HTTP/1.1\""}
+🐰 Keploy: 2025-03-03T16:30:05Z 	[33mWARN[0m	Malformed request	{"ExpectedRecvBytes": 0, "ActualRecvBytes": 0}
+🐰 Keploy: 2025-03-03T16:30:05Z 	[33mWARN[0m	failed processing a request due to invalid request or response	{"Request Size": 0, "Response Size": 258}
+🐰 Keploy: 2025-03-03T16:30:05Z 	[31mERROR[0m	failed to parse the http request from byte array	{"requestBuf": "SFRUUC8xLjEgMjAwIE9LDQpDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24NCkRhdGU6IE1vbiwgMDMgTWFyIDIwMjUgMTY6Mjk6NTUgR01UDQpDb250ZW50LUxlbmd0aDogOTINCg0KeyJvcmRlcklkIjoxLCJhbW91bnQiOjUwMCwic3RhdHVzIjoic3VjY2VzcyIsInRyYW5zYWN0aW9uSWQiOiJwaV8zUXlic05TRkhlaFI3UDZiME5WcDUzUXQifQo=", "error": "invalid method \"HTTP/1.1\""}
+🐰 Keploy: 2025-03-03T16:30:07Z 	[34mINFO[0m	🟠 Keploy has captured test cases for the user's application.	{"path": "/Users/harshsharma/Desktop/kep/Keploy-Contract/VirtualCPR/order-svc/keploy/test-set-0/tests", "testcase name": "test-5"}
+🐰 Keploy: 2025-03-03T16:30:12Z 	[31mERROR[0m	failed to parse the http request from byte array	{"requestBuf": "SFRUUC8xLjEgMjAwIE9LDQpDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24NCkRhdGU6IE1vbiwgMDMgTWFyIDIwMjUgMTY6MzA6MDMgR01UDQpDb250ZW50LUxlbmd0aDogNTcNCg0KeyJpZCI6MSwibmFtZSI6IkpvaG4gRG9lIiwiZW1haWwiOiJqb2huZG9lQGV4YW1wbGUuY29tIn0K", "error": "invalid method \"HTTP/1.1\""}
+🐰 Keploy: 2025-03-03T16:30:12Z 	[31mERROR[0m	failed to parse the http request from byte array	{"requestBuf": "SFRUUC8xLjEgMjAwIE9LDQpDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24NCkRhdGU6IE1vbiwgMDMgTWFyIDIwMjUgMTY6MzA6MDQgR01UDQpDb250ZW50LUxlbmd0aDogOTINCg0KeyJvcmRlcklkIjoyLCJhbW91bnQiOjUwMCwic3RhdHVzIjoic3VjY2VzcyIsInRyYW5zYWN0aW9uSWQiOiJwaV8zUXlic1dTRkhlaFI3UDZiMHBOSHBkSjUifQo=", "error": "invalid method \"HTTP/1.1\""}
+🐰 Keploy: 2025-03-03T16:30:12Z 	[33mWARN[0m	Malformed request	{"ExpectedRecvBytes": 0, "ActualRecvBytes": 0}
+🐰 Keploy: 2025-03-03T16:30:12Z 	[33mWARN[0m	failed processing a request due to invalid request or response	{"Request Size": 0, "Response Size": 259}
+🐰 Keploy: 2025-03-03T16:30:14Z 	[34mINFO[0m	🟠 Keploy has captured test cases for the user's application.	{"path": "/Users/harshsharma/Desktop/kep/Keploy-Contract/VirtualCPR/order-svc/keploy/test-set-0/tests", "testcase name": "test-6"}

@@ -5,37 +5,40 @@ name: test-1
 spec:
     metadata: {}
     req:
-        method: GET
+        method: POST
         proto_major: 1
         proto_minor: 1
-        url: http://localhost:3001/api/users/1
+        url: http://localhost:3001/api/users
         header:
             Accept: '*/*'
+            Content-Length: "56"
+            Content-Type: application/json
             Host: localhost:3001
             User-Agent: curl/8.7.1
-        body: ""
-        timestamp: 2025-02-25T13:13:39.63468351Z
+        body: '{"name": "John wicky", "email": "johnwicky@example.com"}'
+        timestamp: 2025-03-03T16:13:08.899060111Z
     resp:
-        status_code: 404
+        status_code: 200
         header:
-            Content-Length: "28"
-            Content-Type: text/plain; charset=utf-8
-            Date: Tue, 25 Feb 2025 13:13:39 GMT
-            X-Content-Type-Options: nosniff
+            Content-Length: "61"
+            Content-Type: application/json
+            Date: Mon, 03 Mar 2025 16:13:08 GMT
         body: |
-            {"error": "User not found"}
-        status_message: Not Found
+            {"id":1,"name":"John wicky","email":"johnwicky@example.com"}
+        status_message: OK
         proto_major: 0
         proto_minor: 0
-        timestamp: 2025-02-25T13:13:41.689426511Z
+        timestamp: 2025-03-03T16:13:10.933134502Z
     objects: []
     assertions:
         noise:
             header.Date: []
-    created: 1740489221
-curl: |
-    curl --request GET \
-      --url http://localhost:3001/api/users/1 \
-      --header 'Accept: */*' \
+    created: 1741018390
+curl: |-
+    curl --request POST \
+      --url http://localhost:3001/api/users \
+      --header 'Content-Type: application/json' \
       --header 'Host: localhost:3001' \
       --header 'User-Agent: curl/8.7.1' \
+      --header 'Accept: */*' \
+      --data "{\"name\": \"John wicky\", \"email\": \"johnwicky@example.com\"}"

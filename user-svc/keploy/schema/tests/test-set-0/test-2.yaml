@@ -1,0 +1,76 @@
+openapi: 3.0.0
+info:
+    title: test-2
+    version: api.keploy.io/v1beta1
+    description: Http
+servers:
+    - url: localhost:3001
+paths:
+    /api/users:
+        post:
+            summary: Auto-generated operation
+            description: Auto-generated from custom format
+            parameters:
+                - name: Accept
+                  in: header
+                  required: true
+                  schema:
+                    type: string
+                  example: '*/*'
+                - name: Content-Length
+                  in: header
+                  required: true
+                  schema:
+                    type: string
+                  example: "45"
+                - name: Content-Type
+                  in: header
+                  required: true
+                  schema:
+                    type: string
+                  example: application/json
+                - name: Host
+                  in: header
+                  required: true
+                  schema:
+                    type: string
+                  example: localhost:3001
+                - name: User-Agent
+                  in: header
+                  required: true
+                  schema:
+                    type: string
+                  example: curl/8.7.1
+            operationId: 91d392c6d2961b7fb44ab936466ad587-20250303223709
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            type: object
+                            properties:
+                                email:
+                                    type: string
+                                name:
+                                    type: string
+                        example:
+                            email: goku@example.com
+                            name: goku
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                properties:
+                                    email:
+                                        type: string
+                                    id:
+                                        type: number
+                                    name:
+                                        type: string
+                            example:
+                                email: goku@example.com
+                                id: 2
+                                name: goku
+components: {}

@@ -5,36 +5,40 @@ name: test-3
 spec:
     metadata: {}
     req:
-        method: GET
+        method: POST
         proto_major: 1
         proto_minor: 1
-        url: http://localhost:3001/api/users/1
+        url: http://localhost:3001/api/users
         header:
             Accept: '*/*'
+            Content-Length: "47"
+            Content-Type: application/json
             Host: localhost:3001
             User-Agent: curl/8.7.1
-        body: ""
-        timestamp: 2025-02-25T13:14:19.45694211Z
+        body: '{"name": "kilua", "email": "kilua@example.com"}'
+        timestamp: 2025-03-03T16:16:22.892764657Z
     resp:
         status_code: 200
         header:
-            Content-Length: "59"
+            Content-Length: "52"
             Content-Type: application/json
-            Date: Tue, 25 Feb 2025 13:14:19 GMT
+            Date: Mon, 03 Mar 2025 16:18:47 GMT
         body: |
-            {"id":1,"name":"John Doe","email":"johndoeee@example.com"}
+            {"id":3,"name":"kilua","email":"kilua@example.com"}
         status_message: OK
         proto_major: 0
         proto_minor: 0
-        timestamp: 2025-02-25T13:14:21.526718751Z
+        timestamp: 2025-03-03T16:18:49.813957175Z
     objects: []
     assertions:
         noise:
             header.Date: []
-    created: 1740489261
-curl: |
-    curl --request GET \
-      --url http://localhost:3001/api/users/1 \
-      --header 'Accept: */*' \
+    created: 1741018729
+curl: |-
+    curl --request POST \
+      --url http://localhost:3001/api/users \
       --header 'Host: localhost:3001' \
       --header 'User-Agent: curl/8.7.1' \
+      --header 'Accept: */*' \
+      --header 'Content-Type: application/json' \
+      --data "{\"name\": \"kilua\", \"email\": \"kilua@example.com\"}"

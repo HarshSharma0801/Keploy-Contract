@@ -1,0 +1,4 @@
+servicesMapping:
+    user-svc:
+        - /api/users/{id}
+self: user-svc

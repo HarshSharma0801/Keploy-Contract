@@ -11,29 +11,29 @@ spec:
         url: http://localhost:3001/api/users
         header:
             Accept: '*/*'
-            Content-Length: "54"
+            Content-Length: "45"
             Content-Type: application/json
             Host: localhost:3001
             User-Agent: curl/8.7.1
-        body: '{"name": "John Doe", "email": "johndoeee@example.com"}'
-        timestamp: 2025-02-25T13:14:03.055821978Z
+        body: '{"name": "goku", "email": "goku@example.com"}'
+        timestamp: 2025-03-03T16:16:11.903437319Z
     resp:
         status_code: 200
         header:
-            Content-Length: "59"
+            Content-Length: "50"
             Content-Type: application/json
-            Date: Tue, 25 Feb 2025 13:14:03 GMT
+            Date: Mon, 03 Mar 2025 16:18:36 GMT
         body: |
-            {"id":1,"name":"John Doe","email":"johndoeee@example.com"}
+            {"id":2,"name":"goku","email":"goku@example.com"}
         status_message: OK
         proto_major: 0
         proto_minor: 0
-        timestamp: 2025-02-25T13:14:05.072014758Z
+        timestamp: 2025-03-03T16:18:38.746608253Z
     objects: []
     assertions:
         noise:
             header.Date: []
-    created: 1740489245
+    created: 1741018718
 curl: |-
     curl --request POST \
       --url http://localhost:3001/api/users \
@@ -41,4 +41,4 @@ curl: |-
       --header 'User-Agent: curl/8.7.1' \
       --header 'Accept: */*' \
       --header 'Content-Type: application/json' \
-      --data "{\"name\": \"John Doe\", \"email\": \"johndoeee@example.com\"}"
+      --data "{\"name\": \"goku\", \"email\": \"goku@example.com\"}"

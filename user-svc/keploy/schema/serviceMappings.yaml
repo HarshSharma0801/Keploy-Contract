@@ -1,0 +1,4 @@
+servicesMapping:
+    order-svc:
+        - /api/users/{id}
+self: s1
