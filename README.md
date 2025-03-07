@@ -5,11 +5,3 @@
 
 
 
-## Video
-
-
-
-https://github.com/user-attachments/assets/e15787f2-4df7-45f7-b97c-a4e1fc32dfc0
-
-
-
