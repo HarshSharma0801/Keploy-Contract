@@ -63,7 +63,7 @@ Below are the commands to build Docker images and run tests for each service usi
 - **Payment Service (`payment-svc`)**
   - **Build Command**: 
     ```bash
-    docker build -t payment-service-contract ./user-svc
+    docker build -t payment-service-contract ./payment-svc
 
   - **Test Command**: 
     ```bash
@@ -72,7 +72,7 @@ Below are the commands to build Docker images and run tests for each service usi
 - **Notification Service (`notification-svc`)**
   - **Build Command**: 
     ```bash
-    docker build -t notification-service-contract ./user-svc
+    docker build -t notification-service-contract ./notification-svc
 
   - **Test Command**: 
     ```bash
