@@ -38,8 +38,4 @@ The system follows a microservices architecture built with Go, where each servic
 
 Each service runs in its own Docker container and communicates via these endpoints using HTTP requests. The services rely on a shared database (`db`) where applicable, and environment variables configure service-specific settings (e.g., Stripe API keys, SMTP credentials).
 
-## Installation
 
-### For Building Image
-```bash
-cd to root 
