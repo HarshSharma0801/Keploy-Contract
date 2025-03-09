@@ -47,3 +47,7 @@ Below are the commands to build Docker images and run tests for each service usi
     ```bash
     docker build -t user-service-contract ./user-svc
 ```
+  - **Test Command**: 
+    ```bash
+    keploy record -c "docker run -p 3001:3001 --name user-svc --network keploy-network user-service-contract" --container-name "user-svc" --buildDelay 60
+```
