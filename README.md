@@ -50,5 +50,32 @@ Below are the commands to build Docker images and run tests for each service usi
   - **Test Command**: 
     ```bash
     keploy record -c "docker run -p 3001:3001 --name user-svc --network keploy-network user-service-contract" --container-name "user-svc" --buildDelay 60 
-   bash```
+  
+- **Order Service (`order-svc`)**
+  - **Build Command**: 
+    ```bash
+    docker build -t order-service-contract ./order-svc
+
+  - **Test Command**: 
+    ```bash
+    keploy record -c "docker run -p 3002:3002 --name order-svc --network keploy-network order-service-contract" --container-name "order-svc" --buildDelay 60 
+  
+- **Payment Service (`payment-svc`)**
+  - **Build Command**: 
+    ```bash
+    docker build -t payment-service-contract ./user-svc
+
+  - **Test Command**: 
+    ```bash
+    keploy record -c "docker run -p 3003:3003 --name payment-svc --network keploy-network payment-service-contract" --container-name "payment-svc" --buildDelay 60
+  
+- **User Service (`notification-svc`)**
+  - **Build Command**: 
+    ```bash
+    docker build -t notification-service-contract ./user-svc
+
+  - **Test Command**: 
+    ```bash
+    keploy record -c "docker run -p 3004:3004 --name notification-svc --network keploy-network notification-service-contract" --container-name "notification-svc" --buildDelay 60
+  
 
