@@ -69,7 +69,7 @@ Below are the commands to build Docker images and run tests for each service usi
     ```bash
     keploy record -c "docker run -p 3003:3003 --name payment-svc --network keploy-network payment-service-contract" --container-name "payment-svc" --buildDelay 60
   
-- **User Service (`notification-svc`)**
+- **Notification Service (`notification-svc`)**
   - **Build Command**: 
     ```bash
     docker build -t notification-service-contract ./user-svc
@@ -78,4 +78,17 @@ Below are the commands to build Docker images and run tests for each service usi
     ```bash
     keploy record -c "docker run -p 3004:3004 --name notification-svc --network keploy-network notification-service-contract" --container-name "notification-svc" --buildDelay 60
   
+## Contract Testing for each service
+
+1. Generating OpenAPI schemas for each service  
+
+```bash 
+ keploy contract generate 
+```
+
+2. Run the  command to run consumer driven contract testing
+
+```bash 
+ keploy contract test --driven "consumer" 
+```
 
